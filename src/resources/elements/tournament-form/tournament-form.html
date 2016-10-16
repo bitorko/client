@@ -1,0 +1,9 @@
+<template>
+  <require from="./tournament-form.css"></require>
+  <form class="tournament-form" submit.delegate="submit(tournament)">
+    <label for="host">Tournament Host</label><input type="number" value.bind="tournament.host_id | number" name="host" id=""/>
+    <label for="name">Tournament Name</label><input type="text" value.bind="tournament.name" name="name" id=""/>
+    <label for="rounds">Total Rounds </label><input type="number" value.bind="tournament.total_rounds | number" name="rounds" id=""/>
+    <button type="submit">Create</button>
+  </form>
+</template>

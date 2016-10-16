@@ -6,4 +6,4 @@ Bitorko frontend is made with Aurelia and Bourbon. Current focus is to build a d
 
 1. Clone the source and run `npm install`
 2. Clone and run the [api server](https://github.com/bitorko/server)
-3. `npm run --env dev --watch` 
+3. `au run --env dev --watch` 

@@ -1,0 +1,13 @@
+<template>
+  <require from="./nav-bar.css"></require>
+  <header role="banner">
+    <nav role="navigation">
+      <ul class="navigation" ref="menu" class="centered-navigation-menu">
+        <li repeat.for="row of router.navigation" class="nav-link">
+          <a href.bind="row.href">${row.title}</a>
+        </li>
+        <li class="nav-link"><a href="signup">Join In!</a></li>
+      </ul>
+    </nav>
+  </header>
+</template>

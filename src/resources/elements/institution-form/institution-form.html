@@ -1,0 +1,7 @@
+<template>
+  <require from="./institution-form.css"></require>
+  <form class="institution-form" submit.delegate="submit(institution)">
+    <label for="name">Institution Name</label><input type="text" value.bind="institution.name" name="name" id=""/>
+    <button type="submit">Create</button>
+  </form>
+</template>

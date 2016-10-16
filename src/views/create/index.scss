@@ -1,0 +1,34 @@
+@import "../../app";
+
+.side-nav {
+  $base-line-height: 1.5em !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: 53.75em !default;
+  $base-font-color: $dark-gray !default;
+
+  display: inline-block;
+  @include grid-column(3);
+
+  a {
+    color: $action-color;
+    text-decoration: none;
+  }
+
+  .nav-link {
+    border-bottom: 1px solid transparentize($action-color, 0.8);
+    display: block;
+    margin-right: $base-spacing;
+    outline: none;
+    padding: ($base-spacing / 2) 0;
+
+    &:last-child {
+      margin-bottom: $base-spacing;
+    }
+  }
+}
+
+.child-container {
+  @include grid-column(8);
+}

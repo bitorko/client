@@ -1,0 +1,9 @@
+<template>
+  <require from="./index.css"></require>
+  <aside class="side-nav">
+    <a class="nav-link" repeat.for="row of router.navigation" href.bind="row.href">${row.title}</a>
+  </aside>
+  <div class="child-container">
+    <router-view></router-view>
+  </div>
+</template>

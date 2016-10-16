@@ -1,0 +1,11 @@
+<template>
+  <require from="./grid.css"></require>
+  <div class="flex-boxes">
+    <a repeat.for="item of items" class="flex-box">
+      <img src.bind="item.poster" alt="${item.title}">
+      <h1 class="flex-title">${item.name}</h1>
+      <p>${item.description}</p>
+    </a>
+  </div>
+</template>
+

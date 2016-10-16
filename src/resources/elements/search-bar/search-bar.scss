@@ -1,0 +1,13 @@
+@import "../../../app";
+
+.search {
+  max-width: 400px;
+  margin: auto;
+}
+
+@media all and (max-width: $large-screen) {
+  .search {
+    max-width: 80%;
+  }
+}
+

@@ -23,7 +23,7 @@ export function configure(aurelia) {
   http.configure(httpConfig => {
     httpConfig
       .useStandardConfiguration()
-      .withBaseUrl('http://localhost:3000/');
+      .withBaseUrl(environment.base);
   });
 
   container.registerInstance(HttpClient, http);
